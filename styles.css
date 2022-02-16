@@ -275,6 +275,7 @@ hr {
 #bonjour {
   font-family: "Tangerine", cursive;
   font-size: 5rem;
+  margin: 3rem 0;
 }
 
 .mainBody {
@@ -507,6 +508,14 @@ h4 {
 	  text-align: center;
 	  margin-left: 5rem;
   }
+
+  #bonjour {
+	  margin: 0;
+  }
+
+  .pageTitle {
+	  margin: 0;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -523,6 +532,7 @@ h4 {
     font-size: 1.577rem;
     margin-left: 0.5rem;
   }
+
 }
 
 @media screen and (max-width: 320px) {
