@@ -1,0 +1,546 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fbf9f6;
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Cormorant SC", serif;
+  font-size: 1.2rem;
+}
+
+header * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.writtenLogo {
+  display: block;
+  margin: 0 auto 0 2rem;
+  padding-top: 30px;
+  font-family: "Cormorant SC", serif;
+  font-size: 3.4rem;
+}
+
+.writtenLogoBelow {
+  display: none;
+}
+
+.head {
+  position: absolute;
+  top: 35px;
+  right: 50px;
+}
+
+.head .tile {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin-left: 5px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+.head .tile.socialmedia {
+  color: #0b253e;
+  font-size: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: -6px;
+}
+
+header.clicked .head .tile.socialmedia {
+  color: white;
+}
+
+.head .burger {
+  margin-left: 25px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+header .burger .line {
+  background-color: #b08d57;
+}
+
+.meat {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+header.clicked .head .burger .meat {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.meat .line {
+  height: 4px;
+  width: 40px;
+  background-color: #0b253e;
+  border-radius: 3px;
+  position: absolute;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+.meat .line.one {
+  top: 5px;
+  left: 0px;
+}
+.meat .line.two {
+  top: 18px;
+  left: 0px;
+}
+.meat .line.three {
+  top: 31px;
+  left: 0px;
+}
+
+header.clicked .burger .line {
+  background-color: #fff;
+}
+
+header.clicked .burger .line.one {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: 18px;
+}
+
+header.clicked .burger .line.two {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  top: 18px;
+}
+
+header.clicked .burger .line.three {
+  opacity: 0;
+}
+
+header.clicked .burger:hover .meat {
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+}
+
+.nav-modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 120%;
+  height: 120%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  pointer-events: none;
+  overflow: scroll;
+}
+
+header.clicked .nav-modal {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.nav-modal .menu {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 0 auto;
+  background-color: rgba(176, 141, 87, 1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transition: all 0.3s ease-in;
+}
+
+header.clicked .nav-modal .menu {
+  width: 100vw;
+  height: 100%;
+  border-radius: 0px;
+}
+
+nav {
+  position: fixed;
+  left: 20%;
+  top: 20%;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-family: "Cormorant SC", serif;
+  font-size: 30px;
+}
+
+nav li {
+  list-style-image: url("img/kisspng-t-shirt-fleur-de-lis-new-orleans-saints-stencil-cl-fleur-de-lis-vector-5a8a94311aa9f9.2845822115190313451092.png");
+  font-size: 1.3rem;
+  margin: 0.5rem;
+}
+
+nav ul li {
+  text-align: right;
+  border-right: 6px solid white;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  position: absolute;
+  font-family: "Cormorant SC", serif;
+}
+
+nav {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+header.clicked nav {
+  opacity: 1;
+}
+
+nav ul li ul {
+  position: absolute;
+  right: -300px;
+  top: -4px;
+  display: none;
+}
+
+nav ul li ul li {
+  border: none;
+  padding-bottom: 10;
+  padding-left: 10px;
+  height: 50px;
+  width: 300px;
+}
+
+nav ul li ul li a {
+  display: block;
+  height: 50px;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+}
+
+nav ul li.selected ul {
+  display: block;
+}
+
+nav ul li.notselected a {
+  opacity: 0.5;
+}
+
+nav ul li.selected ul li a {
+  opacity: 1;
+}
+
+.fas {
+  color: #b08d57;
+}
+
+.jumbotron-fluid {
+  background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 480px;
+}
+
+hr {
+  border-color: #b08d57;
+  margin-right: 2rem;
+}
+
+#bonjour {
+  font-family: "Tangerine", cursive;
+  font-size: 5rem;
+}
+
+.mainBody {
+  margin: 0 20px;
+  z-index: 0;
+  padding-bottom: 5rem;
+}
+
+#flag {
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  max-width: 100%;
+  height: auto;
+}
+
+.about {
+  font-family: "Cormorant SC", serif;
+  /* font-family: 'EB Garamond', serif;  */
+  /* font-family: 'Playfair Display', serif;  */
+  /* font-family: 'Tangerine', cursive; */
+  font-size: 2.9rem;
+}
+
+.davy {
+  margin-right: 30px;
+  font-family: "EB Garamond", serif;
+}
+
+.alamo {
+  font-size: 2rem;
+}
+
+.locationBody {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.img {
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.hoaList {
+  list-style: none;
+}
+
+.hoaList h4 {
+  font-size: 2rem;
+  color: #b08d57;
+}
+
+.hoaList a h4:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.pageTitle {
+  margin: 3rem 0;
+  text-align: center !important;
+}
+
+#contactBlurb {
+  width: 30%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+h4 {
+  color: #b08d57;
+}
+
+.members h4 {
+  font-size: 2rem;
+}
+
+.videoTitle {
+  padding-bottom: 1.5rem;
+  color: #b08d57;
+}
+
+.youtube {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 1270px) {
+  #poolSide,
+  #fronted {
+    margin-left: 2.5rem;
+  }
+
+  .blurb {
+    margin-top: 3rem;
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+
+  #hotel {
+    margin-left: 2.5rem;
+    margin-top: 5rem;
+  }
+
+  .row2,
+  .row3 {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .jumbotron-fluid {
+    background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
+    /* background-repeat: no-repeat;*/
+    background-position: center;
+    /* background-size: cover; */
+    height: 200px;
+  }
+
+  #flag {
+	margin-top: 5rem;
+	margin-left: 1rem;
+  }
+
+  .about {
+    float: right;
+  }
+
+  #poolSide {
+    margin-top: 1rem;
+  }
+
+  /* #comprised {
+		margin-top: 5rem;
+	} */
+}
+
+/* Location Page CSS */
+
+.locationBody {
+  z-index: 0;
+}
+
+@media screen and (max-width: 820px) {
+  .writtenLogo {
+    margin-left: 50px;
+  }
+
+  #flag {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .writtenLogo {
+    margin-left: 50px;
+    padding-top: 40px;
+    font-size: 4vw;
+  }
+
+  .jumbotron-fluid {
+    background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
+    /* background-repeat: no-repeat;*/
+    background-position: center;
+    /* background-size: cover; */
+    height: 120px;
+  }
+
+  #flag {
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .writtenLogo {
+    width: 130px;
+    padding-top: 30px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  nav ul li ul {
+    top: -9px;
+  }
+  nav ul li ul li {
+    height: 40px;
+  }
+  nav ul li ul li a {
+    font-size: 16px;
+    height: 40px;
+  }
+
+  header {
+    height: 70px;
+  }
+
+  .head {
+    top: 9px;
+    right: 20px;
+  }
+
+  .jumbotron-fluid {
+    background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
+    height: 120px;
+  }
+
+  #flag {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .writtenLogo {
+    display: none;
+  }
+
+  .writtenLogoBelow {
+    display: inline-flex;
+    font-size: 2rem;
+  }
+
+  #flag {
+	  margin-left: 0;
+  }
+
+  .alamo {
+	  text-align: center;
+	  margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .jumbotron-fluid {
+    background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
+    /* background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover; */
+    height: 120px;
+  }
+
+  .writtenLogoBelow {
+    display: inline-flex;
+    font-size: 1.577rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header .head .tile.socialmedia {
+    display: none;
+  }
+
+  .writtenLogoBelow {
+    display: inline-flex;
+    font-size: 1.577rem;
+    margin-left: 0.5rem;
+  }
+
+  .jumbotron-fluid {
+    background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
+    /* background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover; */
+    height: 120px;
+  }
+}
