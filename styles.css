@@ -372,10 +372,23 @@ h4 {
   padding-bottom: 5rem;
 }
 
-@media screen and (min-width: 1270px) {
+@media screen and (min-width: 1280px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .writtenLogo {
+    margin-left: 4rem;
+  }
+
   #poolSide,
   #fronted {
-    margin-left: 2.5rem;
+	margin-left: 2rem;
+  }
+
+  #fountain {
+	  width: 70%;
+	  margin-left: 2rem;
   }
 
   .blurb {
@@ -399,39 +412,78 @@ h4 {
   }
 }
 
-@media screen and (min-width: 821px) and (min-width: 992px) {
-  .jumbotron-fluid {
-    background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
-    /* background-repeat: no-repeat;*/
-    background-position: center;
-    /* background-size: cover; */
-    height: 200px;
-  }
-
-  #flag {
-	margin-top: 5rem;
-	margin-left: 1rem;
-  }
-
-  .about {
-    float: right;
-  }
-
-  #poolSide {
-    margin: 1rem 0 2rem;
-  }
-
-}
-
 /* Location Page CSS */
 
 .locationBody {
   z-index: 0;
 }
 
-@media screen and (min-width: 769px) and (max-width: 820px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	body, html {
+		overflow-x: hidden;
+	  }
+
+	  .jumbotron-fluid {
+		background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
+		height: 120px;
+		max-width: 100%;
+	  }
+	
+	  .writtenLogo {
+		margin-left: 2rem;
+	  }
+	
+	  #poolSide,
+	  #fronted,
+	  #fountain {
+		margin: 6rem 0 0;
+	  }
+	
+	  #fountain {
+		  width: 80%;
+		  margin-left: 2rem;
+	  }
+	
+	  .blurb {
+		margin: 3rem 0 0 3.5rem;
+		font-weight: bolder;
+		font-size: 1.3rem;
+	  }
+	
+	  #hotel {
+		margin-left: 2.5rem;
+		margin-top: 5rem;
+	  }
+	
+	  .row1, .row3 {
+		margin-left: 3rem;
+	  }
+	
+	  .row2,
+	  .row3 {
+		margin-top: 6rem;
+	  }
+}
+
+@media screen and (min-width: 581px) and (max-width: 992px) {
+	body, html {
+		overflow-x: hidden;
+	}
+
+	.jumbotron-fluid {
+		background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
+		height: 120px;
+		max-width: 100%;
+	  }
+
   .writtenLogo {
-    margin-left: 50px;
+    display: none;
+  }
+  
+  .writtenLogoBelow {
+    display: inline-flex;
+	font-size: 2rem;
+	margin-left: .3rem;
   }
 
   #flag {
@@ -464,179 +516,106 @@ h4 {
   }
 }
 
-@media screen and (min-width: 581px) and (max-width: 768px) {
-  .writtenLogo {
-    margin-left: 50px;
-    padding-top: 40px;
-    font-size: 4vw;
-  }
-
-  .jumbotron-fluid {
-    background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
-    /* background-repeat: no-repeat;*/
-    background-position: center;
-    /* background-size: cover; */
-    height: 120px;
-  }
-
-  #flag {
-    margin-left: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 580px) {
+@media screen and (min-width: 280px) and (max-width: 580px) {
 
   body, html {
 	  overflow-x: hidden;
-  }
+	}
+	
+	.jumbotron-fluid {
+	  background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
+	  height: 120px;
+	  max-width: 580px;
+	}
 
-  .writtenLogo {
-    width: 130px;
-    padding-top: 30px;
-  }
+	.writtenLogo {
+		display: none;
+	}
 
-  .writtenLogoBelow {
-    display: inline-flex;
-	font-size: 2rem;
-	margin-left: .3rem;
-  }
+	.writtenLogoBelow {
+		display: inline-flex;
+		font-size: 1.8rem;
+		margin-left: .5rem;
+	}
 
-  nav ul li a {
-    font-size: 16px;
-  }
-  nav ul li ul {
-    top: -9px;
-  }
-  nav ul li ul li {
-    height: 40px;
-  }
-  nav ul li ul li a {
-    font-size: 16px;
-    height: 40px;
-  }
+	nav ul li a {
+		font-size: 16px;
+	}
+	nav ul li ul {
+		top: -9px;
+	}
+	nav ul li ul li {
+		height: 40px;
+	}
+	nav ul li ul li a {
+		font-size: 16px;
+		height: 40px;
+	}
 
-  header {
-	height: 70px;
-	width: 100%;
-  }
+	header {
+		height: 70px;
+		width: 100%;
+	}
 
-  .head {
-    top: 9px;
-    right: 20px;
-  }
+	.head {
+		top: 9px;
+		right: 20px;
+	}
 
-  .jumbotron-fluid {
-    background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
-	height: 120px;
-	max-width: 580px;
-  }
 
-  #flag {
-    margin-left: 0;
-  }
+	#flag {
+		margin-left: 0;
+	}
 
-  #contactBlurb  {
-	  width: 100%;
-  }
-}
+	#bonjour {
+		margin: 0;
+	}
 
-@media screen and (max-width: 500px) {
-  .writtenLogo {
-    display: none;
-  }
+	.pageTitle {
+		margin: 0;
+	}
 
-  .writtenLogoBelow {
-    display: inline-flex;
-	font-size: 2rem;
-	margin-left: .3rem;
-  }
+	#contactBlurb  {
+		width: 100%;
+	}
 
-  #flag {
-	  margin-left: 0;
-  }
+	.alamo {
+		text-align: center;
+		margin-left: 5rem;
+	}
 
-  .alamo {
-	  text-align: center;
-	  margin-left: 5rem;
-  }
+	#poolSide {
+		margin-left: 1.8rem;
+		width: 85%;
+	}
 
-  #bonjour {
-	  margin: 0;
-  }
+	#fountain {
+		margin-left: 1rem;
+		max-width: 90%;
+	}
 
-  .pageTitle {
-	  margin: 0;
-  }
+	#fronted {
+		margin-left: 1rem;
+		max-width: 90%;
+	}
 
-  #poolSide {
-	  margin-left: 1.8rem;
-	  max-width: 85%;
-  }
+	.blurb {
+		margin-left: 1.5rem;
+		max-width: 90%;
+	}
 
-  #fountain {
-	  margin-left: 1rem;
-	  max-width: 90%;
-  }
-
-  #fronted {
-	  margin-left: 1rem;
-	  max-width: 90%;
-  }
-
-  .blurb {
-	  margin-left: 1.5rem;
-	  max-width: 90%;
-  }
-
-  #comprised {
+	#comprised {
 	margin-left: 1.5rem;
 	max-width: 90%;
-  }
+	}
 
-  #broadway {
+	#broadway {
 	margin-left: 1.5rem;
 	max-width: 90%; 
-  }
+	}
 
-  .imgHouse {
-	  margin: 2rem 0;
-  }
+	.imgHouse {
+		margin: 2rem 0;
+	}
 }
 
-@media screen and (max-width: 375px) {
-  .jumbotron-fluid {
-    background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
-    /* background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover; */
-	height: 120px;
-	width: 100%;
-  }
-
-  .writtenLogoBelow {
-    display: inline-flex;
-    font-size: 1.577rem;
-    margin-left: 0.5rem;
-  }
-
-}
-
-@media screen and (max-width: 320px) {
-  header .head .tile.socialmedia {
-    display: none;
-  }
-
-  .writtenLogoBelow {
-    display: inline-flex;
-    font-size: 1.577rem;
-    margin-left: 0.5rem;
-  }
-
-  .jumbotron-fluid {
-    background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
-    /* background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover; */
-    height: 120px;
-  }
-}
