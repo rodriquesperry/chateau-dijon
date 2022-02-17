@@ -312,6 +312,14 @@ hr {
   padding-bottom: 5rem;
 }
 
+.blurb {
+	max-width: 750px;
+}
+
+#comprised {
+	margin-left: 4.5rem;
+}
+
 .img {
   box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
   max-width: 100%;
@@ -371,7 +379,7 @@ h4 {
   }
 
   .blurb {
-    margin-top: 3rem;
+    margin: 3rem 0 0 3.5rem;
     font-weight: bolder;
     font-size: 1.3rem;
   }
@@ -413,9 +421,6 @@ h4 {
     margin-top: 1rem;
   }
 
-  /* #comprised {
-		margin-top: 5rem;
-	} */
 }
 
 /* Location Page CSS */
@@ -486,7 +491,8 @@ h4 {
 
   .jumbotron-fluid {
     background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
-    height: 120px;
+	height: 120px;
+	max-width: 580px;
   }
 
   #flag {
@@ -501,7 +507,8 @@ h4 {
 
   .writtenLogoBelow {
     display: inline-flex;
-    font-size: 2rem;
+	font-size: 2rem;
+	margin-left: .3rem;
   }
 
   #flag {
@@ -521,16 +528,39 @@ h4 {
 	  margin: 0;
   }
 
-  .row1 {
-	  margin-left: .8rem;
+  #poolSide {
+	  margin-left: 1.8rem;
+	  max-width: 85%;
+  }
+
+  #fountain {
+	  margin-left: 1rem;
 	  max-width: 90%;
   }
 
-  .row2, .row3 {
-	  margin-left: .3rem;
-	  max-width: 95%;
+  #fronted {
+	  margin-left: 1rem;
+	  max-width: 90%;
   }
 
+  .blurb {
+	  margin-left: 1rem;
+	  max-width: 90%;
+  }
+
+  #comprised {
+	margin-left: 1rem;
+	max-width: 90%;
+  }
+
+  #broadway {
+	margin-left: 1rem;
+	max-width: 90%; 
+  }
+
+  .imgHouse {
+	  margin: 2rem 0;
+  }
 }
 
 @media screen and (max-width: 375px) {
