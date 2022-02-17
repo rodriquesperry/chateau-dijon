@@ -461,9 +461,20 @@ h4 {
 }
 
 @media screen and (max-width: 580px) {
+
+  body, html {
+	  overflow-x: hidden;
+  }
+
   .writtenLogo {
     width: 130px;
     padding-top: 30px;
+  }
+
+  .writtenLogoBelow {
+    display: inline-flex;
+	font-size: 2rem;
+	margin-left: .3rem;
   }
 
   nav ul li a {
@@ -481,7 +492,8 @@ h4 {
   }
 
   header {
-    height: 70px;
+	height: 70px;
+	width: 100%;
   }
 
   .head {
@@ -569,7 +581,8 @@ h4 {
     /* background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover; */
-    height: 120px;
+	height: 120px;
+	width: 100%;
   }
 
   .writtenLogoBelow {
