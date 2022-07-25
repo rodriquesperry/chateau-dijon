@@ -11,4 +11,9 @@ $(document).ready(function() {
 		$(this).toggleClass('selected');
 		$(this).removeClass('notselected');
 	});
+
+	if ($(window).width() <= 1024) {
+		$('.flagHouse').addClass('col-6');
+		$('.readMore');
+	}
 });

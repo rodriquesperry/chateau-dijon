@@ -2,12 +2,12 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fbf9f6;
-  background-image: url("");
+  background-image: url('');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  font-family: "Cormorant SC", serif;
+  font-family: 'Cormorant SC', serif;
   font-size: 1.2rem;
 }
 
@@ -29,7 +29,7 @@ header {
   display: block;
   margin: 0 auto 0 2rem;
   padding-top: 30px;
-  font-family: "Cormorant SC", serif;
+  font-family: 'Cormorant SC', serif;
   font-size: 3.4rem;
 }
 
@@ -187,12 +187,12 @@ nav a {
   color: white;
   text-decoration: none;
   font-family: sans-serif;
-  font-family: "Cormorant SC", serif;
+  font-family: 'Cormorant SC', serif;
   font-size: 30px;
 }
 
 nav li {
-  list-style-image: url("img/kisspng-t-shirt-fleur-de-lis-new-orleans-saints-stencil-cl-fleur-de-lis-vector-5a8a94311aa9f9.2845822115190313451092.png");
+  list-style-image: url('img/fleur-de-lis-stencil.png');
   font-size: 1.3rem;
   margin: 0.5rem;
 }
@@ -203,7 +203,7 @@ nav ul li {
   padding-bottom: 10px;
   padding-right: 10px;
   position: absolute;
-  font-family: "Cormorant SC", serif;
+  font-family: 'Cormorant SC', serif;
 }
 
 nav {
@@ -260,7 +260,7 @@ nav ul li.selected ul li a {
 }
 
 .jumbotron-fluid {
-  background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
+  background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -273,7 +273,7 @@ hr {
 }
 
 #bonjour {
-  font-family: "Tangerine", cursive;
+  font-family: 'Tangerine', cursive;
   font-size: 5rem;
   margin: 3rem 0;
 }
@@ -284,14 +284,17 @@ hr {
   padding-bottom: 5rem;
 }
 
+
+
 #flag {
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  display: flex;
   max-width: 100%;
   height: auto;
+  margin: 0 0 3.5rem 22.5rem;
 }
 
 .about {
-  font-family: "Cormorant SC", serif;
+  font-family: 'Cormorant SC', serif;
   /* font-family: 'EB Garamond', serif;  */
   /* font-family: 'Playfair Display', serif;  */
   /* font-family: 'Tangerine', cursive; */
@@ -300,7 +303,7 @@ hr {
 
 .davy {
   margin-right: 30px;
-  font-family: "EB Garamond", serif;
+  font-family: 'EB Garamond', serif;
 }
 
 .alamo {
@@ -313,11 +316,11 @@ hr {
 }
 
 .blurb {
-	max-width: 750px;
+  max-width: 750px;
 }
 
 #comprised {
-	margin-left: 4.5rem;
+  margin-left: 4.5rem;
 }
 
 .img {
@@ -333,6 +336,7 @@ hr {
 .hoaList h4 {
   font-size: 2rem;
   color: #b08d57;
+  margin-bottom: 1.3rem;
 }
 
 .hoaList a h4:hover {
@@ -349,14 +353,20 @@ hr {
   width: 30%;
   text-align: center;
   font-size: 1.3rem;
+  width: 80%;
 }
 
 h4 {
   color: #b08d57;
 }
 
+.members {
+  margin-top: 1rem;
+}
+
 .members h4 {
   font-size: 2rem;
+  margin: 0 0 1.3rem 5rem;
 }
 
 .videoTitle {
@@ -372,8 +382,40 @@ h4 {
   padding-bottom: 5rem;
 }
 
+.year-in-review ul li {
+  margin-bottom: 1.3rem;
+}
+
+/* Location Page CSS */
+
+.locationBody {
+  z-index: 0;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  top: 0;
+}
+
+.mapbox-container {
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  border: 3px solid #b08c57c5;
+  margin: 3rem 0;
+  box-shadow: rgb(0 0 0 / 90%) 0px 5px 15px;
+}
+
+/* @media's */
 @media screen and (min-width: 1280px) {
-  body, html {
+  body,
+  html {
     overflow-x: hidden;
   }
 
@@ -383,12 +425,12 @@ h4 {
 
   #poolSide,
   #fronted {
-	margin-left: 2rem;
+    margin-left: 2rem;
   }
 
   #fountain {
-	  width: 70%;
-	  margin-left: 2rem;
+    width: 70%;
+    margin-left: 2rem;
   }
 
   .blurb {
@@ -402,8 +444,9 @@ h4 {
     margin-top: 5rem;
   }
 
-  .row1, .row3 {
-	margin-left: 3rem;
+  .row1,
+  .row3 {
+    margin-left: 3rem;
   }
 
   .row2,
@@ -412,210 +455,470 @@ h4 {
   }
 }
 
-/* Location Page CSS */
-
-.locationBody {
-  z-index: 0;
-}
-
+/* Laptop 1024 */
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-	body, html {
-		overflow-x: hidden;
-	  }
+  body,
+  html {
+    overflow-x: hidden;
+  }
 
-	  .jumbotron-fluid {
-		background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
-		height: 120px;
-		max-width: 100%;
-	  }
-	
-	  .writtenLogo {
-		margin-left: 2rem;
-	  }
-	
-	  #poolSide,
-	  #fronted,
-	  #fountain {
-		margin: 6rem 0 0;
-	  }
-	
-	  #fountain {
-		  width: 80%;
-		  margin-left: 2rem;
-	  }
-	
-	  .blurb {
-		margin: 3rem 0 0 3.5rem;
-		font-weight: bolder;
-		font-size: 1.3rem;
-	  }
-	
-	  #hotel {
-		margin-left: 2.5rem;
-		margin-top: 5rem;
-	  }
-	
-	  .row1, .row3 {
-		margin-left: 3rem;
-	  }
-	
-	  .row2,
-	  .row3 {
-		margin-top: 6rem;
-	  }
+  .jumbotron-fluid {
+    background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+    height: 120px;
+    max-width: 100%;
+  }
+
+  .writtenLogo {
+    margin-left: 2rem;
+  }
+
+  #flag {
+    margin-left: 9.5rem;
+  }
+
+  #poolSide,
+  #fronted,
+  #fountain {
+    margin: 6rem 0 0;
+  }
+
+  #fountain {
+    width: 80%;
+    margin-left: 2rem;
+  }
+
+  .blurb {
+    margin: 3rem 0 0 3.5rem;
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+
+  #hotel {
+    margin-left: 2.5rem;
+    margin-top: 5rem;
+  }
+
+  .row1,
+  .row3 {
+    margin-left: 3rem;
+  }
+
+  .row2,
+  .row3 {
+    margin-top: 6rem;
+  }
+
+  .members h4 {
+    margin: 0 0 1.3rem 4.7rem;
+
+  }
+
+  .year-in-review ul li {
+    margin-bottom: 1.3rem;
+  }
 }
 
+/* Tablet 768 */
 @media screen and (min-width: 581px) and (max-width: 992px) {
-	body, html {
-		overflow-x: hidden;
-	}
+  body,
+  html {
+    overflow-x: hidden;
+  }
 
-	.jumbotron-fluid {
-		background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
-		height: 120px;
-		max-width: 100%;
-	  }
+  .jumbotron-fluid {
+    background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+    height: 120px;
+    max-width: 100%;
+  }
 
   .writtenLogo {
     display: none;
   }
-  
+
   .writtenLogoBelow {
     display: inline-flex;
-	font-size: 2rem;
-	margin-left: .3rem;
+    font-size: 2rem;
+    margin-left: 0.3rem;
   }
 
   #flag {
+    margin-left: 1.8rem;
+  }
+
+  .imgHouse {
     display: flex;
     justify-content: center;
   }
 
-  .imgHouse {
-	display: flex;
-	justify-content: center;
-  }
-
   #poolSide {
-	  width: 70%;
-	  margin: 0 0 2rem;
+    width: 70%;
+    margin: 0 0 2rem;
   }
 
   #fountain {
-	  width: 73%;
-	  margin: 3rem 0 2rem 2.7rem;
+    width: 73%;
+    margin: 3rem 0 2rem 2.7rem;
   }
 
-  #hotel, #broadway {
-	  margin-left: 4rem;
+  #hotel,
+  #broadway {
+    margin-left: 4rem;
   }
 
   #fronted {
-	  width: 75%;
-	  margin: 3rem 0 2rem 2.7rem;
+    width: 75%;
+    margin: 3rem 0 2rem 2.7rem;
+  }
+
+  .members h4 {
+    margin: 0 0 1.3rem 5rem;
+  }
+
+  .year-in-review ul li {
+    margin-bottom: 1.3rem;
   }
 }
 
-@media screen and (min-width: 280px) and (max-width: 580px) {
+/* Mobile L 425 */
+@media screen and (min-width: 425px) and (max-width: 580px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
 
-  body, html {
-	  overflow-x: hidden;
-	}
-	
-	.jumbotron-fluid {
-	  background-image: url("https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1");
-	  height: 120px;
-	  max-width: 580px;
-	}
+  .jumbotron-fluid {
+    background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+    height: 120px;
+    max-width: 580px;
+  }
 
-	.writtenLogo {
-		display: none;
-	}
+  .writtenLogo {
+    display: none;
+  }
 
-	.writtenLogoBelow {
-		display: inline-flex;
-		font-size: 1.8rem;
-		margin-left: .5rem;
-	}
+  .writtenLogoBelow {
+    display: inline-flex;
+    font-size: 1.8rem;
+    margin-left: 0.5rem;
+  }
 
-	nav ul li a {
-		font-size: 16px;
-	}
-	nav ul li ul {
-		top: -9px;
-	}
-	nav ul li ul li {
-		height: 40px;
-	}
-	nav ul li ul li a {
-		font-size: 16px;
-		height: 40px;
-	}
+  #flag {
+    margin-left: 0;
+  }
 
-	header {
-		height: 70px;
-		width: 100%;
-	}
+  nav ul li a {
+    font-size: 16px;
+  }
+  nav ul li ul {
+    top: -9px;
+  }
+  nav ul li ul li {
+    height: 40px;
+  }
+  nav ul li ul li a {
+    font-size: 16px;
+    height: 40px;
+  }
 
-	.head {
-		top: 9px;
-		right: 20px;
-	}
+  header {
+    height: 70px;
+    width: 100%;
+  }
 
+  .head {
+    top: 9px;
+    right: 20px;
+  }
 
-	#flag {
-		margin-left: 0;
-	}
+  #bonjour {
+    margin: 0;
+  }
 
-	#bonjour {
-		margin: 0;
-	}
+  .pageTitle {
+    margin: 0;
+  }
 
-	.pageTitle {
-		margin: 0;
-	}
+  #contactBlurb {
+    width: 90%;
+  }
 
-	#contactBlurb  {
-		width: 100%;
-	}
+  .alamo {
+    text-align: center;
+    margin-left: 5rem;
+  }
 
-	.alamo {
-		text-align: center;
-		margin-left: 5rem;
-	}
+  #poolSide {
+    margin-left: 1.8rem;
+    width: 85%;
+  }
 
-	#poolSide {
-		margin-left: 1.8rem;
-		width: 85%;
-	}
+  #fountain {
+    margin-left: 1rem;
+    max-width: 90%;
+  }
 
-	#fountain {
-		margin-left: 1rem;
-		max-width: 90%;
-	}
+  #fronted {
+    margin-left: 1rem;
+    max-width: 90%;
+  }
 
-	#fronted {
-		margin-left: 1rem;
-		max-width: 90%;
-	}
+  .blurb {
+    margin-left: 1.5rem;
+    max-width: 90%;
+  }
 
-	.blurb {
-		margin-left: 1.5rem;
-		max-width: 90%;
-	}
+  #comprised {
+    margin-left: 1.5rem;
+    max-width: 90%;
+  }
 
-	#comprised {
-	margin-left: 1.5rem;
-	max-width: 90%;
-	}
+  #broadway {
+    margin-left: 1.5rem;
+    max-width: 90%;
+  }
 
-	#broadway {
-	margin-left: 1.5rem;
-	max-width: 90%; 
-	}
+  .imgHouse {
+    margin: 2rem 0;
+  }
 
-	.imgHouse {
-		margin: 2rem 0;
-	}
+  .members h4 {
+    margin: 0 0 1.5rem 5rem;
+
+  }
+
+  .hoaList {
+    margin-top: 1.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .owners {
+    margin-left: 1.5rem;
+  }
+
+  .year-in-review ul li {
+    margin-bottom: 1.3rem;
+  }
+  
 }
 
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .jumbotron-fluid {
+    background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+    height: 120px;
+    max-width: 580px;
+  }
+
+  .writtenLogo {
+    display: none;
+  }
+
+  .writtenLogoBelow {
+    display: inline-flex;
+    font-size: 1.8rem;
+    margin-left: 0.5rem;
+  }
+
+  #flag {
+    margin-left: 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  nav ul li ul {
+    top: -9px;
+  }
+  nav ul li ul li {
+    height: 40px;
+  }
+  nav ul li ul li a {
+    font-size: 16px;
+    height: 40px;
+  }
+
+  header {
+    height: 70px;
+    width: 100%;
+  }
+
+  .head {
+    top: 9px;
+    right: 20px;
+  }
+
+  #bonjour {
+    margin: 0;
+  }
+
+  .pageTitle {
+    margin: 0;
+  }
+
+  #contactBlurb {
+    width: 100%;
+  }
+
+  .alamo {
+    text-align: center;
+    margin-left: 5rem;
+  }
+
+  #poolSide {
+    margin-left: 1.8rem;
+    width: 85%;
+  }
+
+  #fountain {
+    margin-left: 1rem;
+    max-width: 90%;
+  }
+
+  #fronted {
+    margin-left: 1rem;
+    max-width: 90%;
+  }
+
+  .blurb {
+    margin-left: 1.5rem;
+    max-width: 90%;
+  }
+
+  #comprised {
+    margin-left: 1.5rem;
+    max-width: 90%;
+  }
+
+  #broadway {
+    margin-left: 1.5rem;
+    max-width: 90%;
+  }
+
+  .imgHouse {
+    margin: 2rem 0;
+  }
+
+  .members h4 {
+    margin: 0 0 1.5rem 5rem;
+
+  }
+
+  .year-in-review ul li {
+    margin: 0 0 1.3rem 1.8rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .jumbotron-fluid {
+    background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+    height: 120px;
+    max-width: 580px;
+  }
+
+  .writtenLogo {
+    display: none;
+  }
+
+  .writtenLogoBelow {
+    display: inline-flex;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  #flag {
+    margin-left: 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  nav ul li ul {
+    top: -9px;
+  }
+  nav ul li ul li {
+    height: 40px;
+  }
+  nav ul li ul li a {
+    font-size: 16px;
+    height: 40px;
+  }
+
+  header {
+    height: 70px;
+    width: 100%;
+  }
+
+  .head {
+    top: 9px;
+    right: 20px;
+  }
+
+  #bonjour {
+    margin: 0;
+  }
+
+  .pageTitle {
+    margin: 0;
+  }
+
+  #contactBlurb {
+    width: 90%;
+  }
+
+  .alamo {
+    text-align: center;
+    margin-left: 5rem;
+  }
+
+  #poolSide {
+    margin-left: 1.8rem;
+    width: 85%;
+  }
+
+  #fountain {
+    margin-left: 1rem;
+    max-width: 90%;
+  }
+
+  #fronted {
+    margin-left: 1rem;
+    max-width: 90%;
+  }
+
+  .blurb {
+    margin-left: 1.5rem;
+    max-width: 90%;
+  }
+
+  #comprised {
+    margin-left: 1.5rem;
+    max-width: 90%;
+  }
+
+  #broadway {
+    margin-left: 1.5rem;
+    max-width: 90%;
+  }
+
+  .imgHouse {
+    margin: 2rem 0;
+  }
+
+  .members h4 {
+    margin: 0 0 1.5rem 2.2rem;
+
+  }
+
+  .year-in-review ul li {
+    margin: 0 0 1.3rem 0rem;
+  }
+}
