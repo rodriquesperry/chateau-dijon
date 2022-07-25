@@ -914,7 +914,7 @@ h4 {
   }
 }
 
-@media (not: pointer) and (orientation: landscape) {
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
   nav {
     top: 0;
   }
