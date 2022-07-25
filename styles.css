@@ -181,6 +181,13 @@ nav {
   left: 20%;
   top: 20%;
   color: white;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 nav a {
@@ -204,16 +211,6 @@ nav ul li {
   padding-right: 10px;
   position: absolute;
   font-family: 'Cormorant SC', serif;
-}
-
-nav {
-  opacity: 0;
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -webkit-transition-delay: 0.3s;
-  -moz-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  transition-delay: 0.3s;
 }
 
 header.clicked nav {
@@ -283,8 +280,6 @@ hr {
   z-index: 0;
   padding-bottom: 5rem;
 }
-
-
 
 #flag {
   display: flex;
@@ -413,6 +408,7 @@ h4 {
 }
 
 /* @media's */
+
 @media screen and (min-width: 1280px) {
   body,
   html {
@@ -510,7 +506,6 @@ h4 {
 
   .members h4 {
     margin: 0 0 1.3rem 4.7rem;
-
   }
 
   .year-in-review ul li {
@@ -683,7 +678,6 @@ h4 {
 
   .members h4 {
     margin: 0 0 1.5rem 5rem;
-
   }
 
   .hoaList {
@@ -698,7 +692,6 @@ h4 {
   .year-in-review ul li {
     margin-bottom: 1.3rem;
   }
-  
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
@@ -804,7 +797,6 @@ h4 {
 
   .members h4 {
     margin: 0 0 1.5rem 5rem;
-
   }
 
   .year-in-review ul li {
@@ -915,10 +907,19 @@ h4 {
 
   .members h4 {
     margin: 0 0 1.5rem 2.2rem;
-
   }
 
   .year-in-review ul li {
     margin: 0 0 1.3rem 0rem;
+  }
+}
+
+@media (not: pointer) and (orientation: landscape) {
+  nav {
+    top: 0;
+  }
+
+  nav a {
+    font-size: 23px;
   }
 }
