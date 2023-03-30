@@ -27,7 +27,7 @@ header {
 
 header .writtenLogo a {
   text-decoration: none;
-  color: #b08d57;colorcolor
+  color: #b08d57;
 }
 
 .writtenLogo {
@@ -262,7 +262,7 @@ nav ul li.selected ul li a {
 }
 
 .jumbotron-fluid {
-  background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+  background-image: url('./img/jumbotron_chateau_dijon.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -325,6 +325,11 @@ hr {
 .img {
   box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
   max-width: 100%;
+  height: auto;
+}
+
+.embed {
+  width: auto;
   height: auto;
 }
 
@@ -419,7 +424,7 @@ h4 {
 }
 
 footer {
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
 }
 
 footer p {
@@ -427,7 +432,7 @@ footer p {
   margin: 0;
 }
 
-footer h2  {
+footer h2 {
   color: #b08d57;
   margin-left: 2rem;
 }
@@ -537,8 +542,6 @@ footer h2  {
   }
 }
 
-
-
 @media screen and (min-width: 1280px) and (max-width: 1440px) {
   body,
   html {
@@ -622,7 +625,7 @@ footer h2  {
   }
 
   .jumbotron-fluid {
-    background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+    background-image: url('./img/jumbotron_chateau_dijon.jpeg');
     height: 120px;
     max-width: 100%;
   }
@@ -713,7 +716,7 @@ footer h2  {
   }
 
   .jumbotron-fluid {
-    background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+    background-image: url('./img/jumbotron_chateau_dijon.jpeg');
     height: 120px;
     max-width: 100%;
   }
@@ -792,7 +795,7 @@ footer h2  {
   }
 
   .jumbotron-fluid {
-    background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+    background-image: url('./img/jumbotron_chateau_dijon.jpeg');
     height: 120px;
     max-width: 580px;
   }
@@ -937,7 +940,7 @@ footer h2  {
   }
 
   .jumbotron-fluid {
-    background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+    background-image: url('./img/jumbotron_chateau_dijon.jpeg');
     height: 120px;
     max-width: 580px;
   }
@@ -1065,7 +1068,7 @@ footer h2  {
   }
 
   .jumbotron-fluid {
-    background-image: url('https://nebula.wsimg.com/840c693529f31e06ee6baa5a49f13285?AccessKeyId=C7018F589C4D922B4FA4&disposition=0&alloworigin=1');
+    background-image: url('./img/jumbotron_chateau_dijon.jpeg');
     height: 120px;
     max-width: 580px;
   }
@@ -1202,6 +1205,4 @@ footer h2  {
   #chateau-dijon-popup {
     max-width: 100%;
   }
-}
-}
 }
