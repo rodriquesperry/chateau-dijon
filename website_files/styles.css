@@ -393,6 +393,19 @@ h4 {
   margin-bottom: 1.3rem;
 }
 
+.workOrderBlurb {
+  font-size: 1.5rem;
+}
+
+.bolder {
+  font-size: larger;
+  font-weight: 900;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
 /* Location Page */
 
 .locationBody {
@@ -440,6 +453,8 @@ footer h2 {
 .powered-by a {
   color: #b08d57;
 }
+
+
 
 /* @media's */
 
