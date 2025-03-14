@@ -368,6 +368,14 @@ h4 {
   color: #b08d57;
 }
 
+.board-name-bg h4 {
+  color: #fff;
+}
+
+.board-name-bg p {
+  color: #b08d57;
+}
+
 .members {
   margin-top: 1rem;
 }
@@ -378,8 +386,9 @@ h4 {
 }
 
 .videoTitle {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
   color: #b08d57;
+  text-align: center;
 }
 
 .youtube {
@@ -387,6 +396,10 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.pdf {
+  height: 900px;
 }
 
 .year-in-review ul li {
@@ -452,6 +465,15 @@ footer h2 {
 
 .powered-by a {
   color: #b08d57;
+}
+
+.board-name-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-item img {
+  height: 500px;
+
 }
 
 
