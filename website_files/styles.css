@@ -1,1245 +1,1188 @@
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #fbf9f6;
-  background-image: url('');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  font-family: 'Cormorant SC', serif;
-  font-size: 1.2rem;
+	padding: 0;
+	margin: 0;
+	background-color: #fbf9f6;
+	background-image: url('');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	font-family: 'Cormorant SC', serif;
+	font-size: 1.2rem;
 }
 
 header * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 header {
-  width: 100%;
-  position: relative;
-  background-color: white;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
-  z-index: 1;
+	width: 100%;
+	position: relative;
+	background-color: white;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+	z-index: 1;
 }
 
 header .writtenLogo a {
-  text-decoration: none;
-  color: #b08d57;
+	text-decoration: none;
+	color: #b08d57;
 }
 
 .writtenLogo {
-  display: block;
-  margin: 0 auto 0 2rem;
-  padding-top: 30px;
-  font-family: 'Cormorant SC', serif;
-  font-size: 3.4rem;
+	display: block;
+	margin: 0 auto 0 2rem;
+	padding-top: 30px;
+	font-family: 'Cormorant SC', serif;
+	font-size: 3.4rem;
 }
 
 .writtenLogoBelow {
-  display: none;
+	display: none;
 }
 
 .head {
-  position: absolute;
-  top: 35px;
-  right: 50px;
+	position: absolute;
+	top: 35px;
+	right: 50px;
 }
 
 .head .tile {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  margin-left: 5px;
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	margin-left: 5px;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
 }
 
 .head .tile.socialmedia {
-  color: #0b253e;
-  font-size: 50px;
-  text-align: center;
-  line-height: 50px;
-  position: relative;
-  top: -6px;
+	color: #0b253e;
+	font-size: 50px;
+	text-align: center;
+	line-height: 50px;
+	position: relative;
+	top: -6px;
 }
 
 header.clicked .head .tile.socialmedia {
-  color: white;
+	color: white;
 }
 
 .head .burger {
-  margin-left: 25px;
-  padding: 5px;
-  cursor: pointer;
-  background-color: transparent;
+	margin-left: 25px;
+	padding: 5px;
+	cursor: pointer;
+	background-color: transparent;
 }
 
 header .burger .line {
-  background-color: #b08d57;
+	background-color: #b08d57;
 }
 
 .meat {
-  height: 40px;
-  width: 40px;
-  position: relative;
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
+	height: 40px;
+	width: 40px;
+	position: relative;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
 }
 
 header.clicked .head .burger .meat {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
 }
 
 .meat .line {
-  height: 4px;
-  width: 40px;
-  background-color: #0b253e;
-  border-radius: 3px;
-  position: absolute;
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
+	height: 4px;
+	width: 40px;
+	background-color: #0b253e;
+	border-radius: 3px;
+	position: absolute;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
 }
 .meat .line.one {
-  top: 5px;
-  left: 0px;
+	top: 5px;
+	left: 0px;
 }
 .meat .line.two {
-  top: 18px;
-  left: 0px;
+	top: 18px;
+	left: 0px;
 }
 .meat .line.three {
-  top: 31px;
-  left: 0px;
+	top: 31px;
+	left: 0px;
 }
 
 header.clicked .burger .line {
-  background-color: #fff;
+	background-color: #fff;
 }
 
 header.clicked .burger .line.one {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  top: 18px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	top: 18px;
 }
 
 header.clicked .burger .line.two {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  top: 18px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	top: 18px;
 }
 
 header.clicked .burger .line.three {
-  opacity: 0;
+	opacity: 0;
 }
 
 header.clicked .burger:hover .meat {
-  transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
 }
 
 .nav-modal {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 120%;
-  height: 120%;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  pointer-events: none;
-  overflow: scroll;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 120%;
+	height: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	pointer-events: none;
+	overflow: scroll;
 }
 
 header.clicked .nav-modal {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: initial;
+	visibility: visible;
+	opacity: 1;
+	pointer-events: initial;
 }
 
 .nav-modal .menu {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  margin: 0 auto;
-  background-color: rgba(176, 141, 87, 1);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transition: all 0.3s ease-in;
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	margin: 0 auto;
+	background-color: rgba(176, 141, 87, 1);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transition: all 0.3s ease-in;
 }
 
 header.clicked .nav-modal .menu {
-  width: 100vw;
-  height: 100%;
-  border-radius: 0px;
+	width: 100vw;
+	height: 100%;
+	border-radius: 0px;
 }
 
 nav {
-  position: fixed;
-  left: 20%;
-  top: 20%;
-  color: white;
-  opacity: 0;
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -webkit-transition-delay: 0.3s;
-  -moz-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+	position: fixed;
+	left: 20%;
+	top: 20%;
+	color: white;
+	opacity: 0;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-webkit-transition-delay: 0.3s;
+	-moz-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	transition-delay: 0.3s;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-family: 'Cormorant SC', serif;
-  font-size: 30px;
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-family: 'Cormorant SC', serif;
+	font-size: 30px;
 }
 
 nav li {
-  list-style-image: url('img/fleur-de-lis-stencil.png');
-  font-size: 1.3rem;
-  margin: 0.5rem;
+	list-style-image: url('img/fleur-de-lis-stencil.png');
+	font-size: 1.3rem;
+	margin: 0.5rem;
 }
 
 nav ul li {
-  text-align: right;
-  border-right: 6px solid white;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  position: absolute;
-  font-family: 'Cormorant SC', serif;
+	text-align: right;
+	border-right: 6px solid white;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	position: absolute;
+	font-family: 'Cormorant SC', serif;
 }
 
 header.clicked nav {
-  opacity: 1;
+	opacity: 1;
 }
 
 nav ul li ul {
-  position: absolute;
-  right: -300px;
-  top: -4px;
-  display: none;
+	position: absolute;
+	right: -300px;
+	top: -4px;
+	display: none;
 }
 
 nav ul li ul li {
-  border: none;
-  padding-bottom: 10;
-  padding-left: 10px;
-  height: 50px;
-  width: 300px;
+	border: none;
+	padding-bottom: 10;
+	padding-left: 10px;
+	height: 50px;
+	width: 300px;
 }
 
 nav ul li ul li a {
-  display: block;
-  height: 50px;
-  font-size: 20px;
-  text-align: left;
-  padding: 10px;
+	display: block;
+	height: 50px;
+	font-size: 20px;
+	text-align: left;
+	padding: 10px;
 }
 
 nav ul li.selected ul {
-  display: block;
+	display: block;
 }
 
 nav ul li.notselected a {
-  opacity: 0.5;
+	opacity: 0.5;
 }
 
 nav ul li.selected ul li a {
-  opacity: 1;
+	opacity: 1;
 }
 
 .fas {
-  color: #b08d57;
+	color: #b08d57;
 }
 
 .jumbotron-fluid {
-  background-image: url('./img/jumbotron_chateau_dijon.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 480px;
+	background-image: url('./img/jumbotron_chateau_dijon.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 480px;
 }
 
 hr {
-  border-color: #b08d57;
-  margin-right: 2rem;
+	border-color: #b08d57;
+	margin-right: 2rem;
 }
 
 #bonjour {
-  font-family: 'Tangerine', cursive;
-  font-size: 5rem;
-  margin: 3rem 0;
+	font-family: 'Tangerine', cursive;
+	font-size: 5rem;
+	margin: 3rem 0;
 }
 
 .mainBody {
-  margin: 0 20px;
-  z-index: 0;
-  /* padding-bottom: .3rem; */
+	margin: 0 20px;
+	z-index: 0;
+  overflow: hidden;
+  padding-bottom: 50px;
 }
 
 #flag {
-  display: flex;
-  max-width: 100%;
-  height: auto;
+	display: flex;
+	max-width: 100%;
+	height: auto;
 }
 
 .about {
-  font-family: 'Cormorant SC', serif;
-  /* font-family: 'EB Garamond', serif;  */
-  /* font-family: 'Playfair Display', serif;  */
-  /* font-family: 'Tangerine', cursive; */
-  font-size: 2.9rem;
+	font-family: 'Cormorant SC', serif;
+	/* font-family: 'EB Garamond', serif;  */
+	/* font-family: 'Playfair Display', serif;  */
+	/* font-family: 'Tangerine', cursive; */
+	font-size: 2.9rem;
 }
 
 .davy {
-  margin-right: 30px;
-  font-family: 'EB Garamond', serif;
+	margin-right: 30px;
+	font-family: 'EB Garamond', serif;
 }
 
 .alamo {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 .locationBody {
-  margin-top: 5rem;
-  padding-bottom: 5rem;
+	margin-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 .blurb {
-  max-width: 750px;
+	max-width: 750px;
 }
 
 #comprised {
-  margin-left: 4.5rem;
+	margin-left: 4.5rem;
 }
 
 .img {
-  box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
-  max-width: 100%;
-  height: auto;
+	box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+	max-width: 100%;
+	height: auto;
 }
 
 .embed {
-  width: auto;
-  height: auto;
+	width: auto;
+	height: auto;
 }
 
 .hoaList {
-  list-style: none;
+	list-style: none;
 }
 
 .hoaList h4 {
-  font-size: 2rem;
-  color: #b08d57;
-  margin-bottom: 1.3rem;
+	font-size: 2rem;
+	color: #b08d57;
+	margin-bottom: 1.3rem;
 }
 
 .hoaList a h4:hover {
-  color: black;
-  text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
 
 .pageTitle {
-  margin: 3rem 0;
-  text-align: center !important;
+	margin: 3rem 0;
+	text-align: center !important;
 }
 
 .staff-image-container img {
-  width: 90%;
+	width: 90%;
 }
 
 #contactBlurb {
-  width: 30%;
-  text-align: center;
-  font-size: 1.3rem;
-  width: 80%;
+	width: 30%;
+	text-align: center;
+	font-size: 1.3rem;
+	width: 80%;
 }
 
 h4 {
-  color: #b08d57;
-}
-
-.board-name-bg h4 {
-  color: #fff;
-}
-
-.board-name-bg p {
-  color: #b08d57;
-}
-
-.members {
-  margin-top: 1rem;
-}
-
-.members h4 {
-  font-size: 2rem;
-  margin: 0 0 1.3rem 5rem;
+	color: #b08d57;
 }
 
 .videoTitle {
-  padding-bottom: 2.5rem;
-  color: #b08d57;
-  text-align: center;
+	padding-bottom: 2.5rem;
+	color: #b08d57;
+	text-align: center;
 }
 
 .youtube {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .pdf {
-  height: 900px;
+	height: 900px;
 }
 
 .year-in-review ul li {
-  margin-bottom: 1.3rem;
+	margin-bottom: 1.3rem;
 }
 
 .workOrderBlurb {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .bolder {
-  font-size: larger;
-  font-weight: 900;
+	font-size: larger;
+	font-weight: 900;
 }
 
 .underline {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Location Page */
 
 .locationBody {
-  z-index: 0;
+	z-index: 0;
 }
 
 .map-container {
-  display: flex;
-  justify-content: center;
-  top: 0;
+	display: flex;
+	justify-content: center;
+	top: 0;
 }
 
 .mapbox-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 #map {
-  width: 90%;
-  height: 500px;
-  margin: auto;
-  border: 3px solid #b08c57c5;
-  margin: 3rem 0;
-  box-shadow: rgb(0 0 0 / 90%) 0px 5px 15px;
+	width: 90%;
+	height: 500px;
+	margin: auto;
+	border: 3px solid #b08c57c5;
+	margin: 3rem 0;
+	box-shadow: rgb(0 0 0 / 90%) 0px 5px 15px;
 }
 
 #hours {
-  margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 footer {
-  padding-bottom: 0.3rem;
+	padding-bottom: 0.3rem;
+  position: relative;
+  z-index: 10;
 }
 
 footer p {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 footer h2 {
-  color: #b08d57;
-  margin-left: 2rem;
+	color: #b08d57;
+	margin-left: 2rem;
 }
 
 .powered-by a {
-  color: #b08d57;
-}
-
-.board-name-bg {
-  background-color: rgba(0, 0, 0, 0.7);
+	color: #b08d57;
 }
 
 .carousel-item img {
-  height: 500px;
-
+	height: 500px;
 }
-
-
 
 /* @media's */
 
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
-  .locationBody {
-    margin-left: 22rem;
-  }
+	.locationBody {
+		margin-left: 22rem;
+	}
 
-  .row1 {
-    margin-left: 4rem;
-  }
+	.row1 {
+		margin-left: 4rem;
+	}
 
-  .row1 .imgHouse img {
-    margin-left: 7rem;
-  }
+	.row1 .imgHouse img {
+		margin-left: 7rem;
+	}
 
-  #fountain {
-    margin-left: 5rem;
-    margin-bottom: 5rem;
-  }
+	#fountain {
+		margin-left: 5rem;
+		margin-bottom: 5rem;
+	}
 
-  #hotel {
-    margin-left: 20rem;
-    margin-top: 8rem;
-  }
+	#hotel {
+		margin-left: 20rem;
+		margin-top: 8rem;
+	}
 
-  .row3 .imgHouse img {
-    margin-left: 10rem;
-  }
+	.row3 .imgHouse img {
+		margin-left: 10rem;
+	}
 
-  .board-image-container img {
-    width: 33%;
-  }
-
-  .staff-image-container img {
-    width: 33%;
-  }
+	.staff-image-container img {
+		width: 33%;
+	}
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
-  #flag {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 3.5rem 28.2rem;
-  }
+	#flag {
+		display: flex;
+		max-width: 100%;
+		height: auto;
+		margin: 0 0 3.5rem 28.2rem;
+	}
 
-  .flag-blurb {
-    margin-left: 10rem;
-    margin-bottom: 5rem;
-    width: 80%;
-  }
+	.flag-blurb {
+		margin-left: 10rem;
+		margin-bottom: 5rem;
+		width: 80%;
+	}
 
-  .locationBody {
-    margin-top: 5rem;
-    margin-left: 5rem;
-    padding-bottom: 5rem;
-  }
+	.locationBody {
+		margin-top: 5rem;
+		margin-left: 5rem;
+		padding-bottom: 5rem;
+	}
 
-  .blurb {
-    margin-top: 2rem;
-  }
+	.blurb {
+		margin-top: 2rem;
+	}
 
-  #hotel {
-    margin-top: 7rem;
-  }
+	#hotel {
+		margin-top: 7rem;
+	}
 
-  #broadway {
-    margin-top: 7rem;
-  }
+	#broadway {
+		margin-top: 7rem;
+	}
 
-  .auto-resize {
-    width: 1200px;
-  }
+	.auto-resize {
+		width: 1200px;
+	}
 
-  .auto-resize > div {
-    position: relative;
-    padding-bottom: 65%;
-    height: 0px;
-  }
+	.auto-resize > div {
+		position: relative;
+		padding-bottom: 65%;
+		height: 0px;
+	}
 
-  .auto-resize iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-  }
+	.auto-resize iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 70%;
+	}
 
-  .year-in-review {
-    margin-right: 3rem;
-  }
+	.year-in-review {
+		margin-right: 3rem;
+	}
 
-  .board-image-container img {
-    width: 40%;
-  }
-
-  .staff-image-container img {
-    width: 30%;
-  }
+	.staff-image-container img {
+		width: 30%;
+	}
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1440px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
+	body,
+	html {
+		overflow-x: hidden;
+	}
 
-  .writtenLogo {
-    margin-left: 4rem;
-  }
+	.writtenLogo {
+		margin-left: 4rem;
+	}
 
-  #flag {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 3.5rem 23rem;
-  }
+	#flag {
+		display: flex;
+		max-width: 100%;
+		height: auto;
+		margin: 0 0 3.5rem 23rem;
+	}
 
-  #poolSide,
-  #fronted {
-    margin-left: 2rem;
-  }
+	#poolSide,
+	#fronted {
+		margin-left: 2rem;
+	}
 
-  #fountain {
-    width: 70%;
-    margin-left: 2rem;
-  }
+	#fountain {
+		width: 70%;
+		margin-left: 2rem;
+	}
 
-  .blurb {
-    margin: 3rem 0 0 3.5rem;
-    font-weight: bolder;
-    font-size: 1.3rem;
-  }
+	.blurb {
+		margin: 3rem 0 0 3.5rem;
+		font-weight: bolder;
+		font-size: 1.3rem;
+	}
 
-  #hotel {
-    margin-left: 2.5rem;
-    margin-top: 5rem;
-  }
+	#hotel {
+		margin-left: 2.5rem;
+		margin-top: 5rem;
+	}
 
-  .row1,
-  .row3 {
-    margin-left: 3rem;
-  }
+	.row1,
+	.row3 {
+		margin-left: 3rem;
+	}
 
-  .row2,
-  .row3 {
-    margin-top: 6rem;
-  }
+	.row2,
+	.row3 {
+		margin-top: 6rem;
+	}
 
-  .auto-resize {
-    width: 1200px;
-  }
+	.auto-resize {
+		width: 1200px;
+	}
 
-  .auto-resize > div {
-    position: relative;
-    padding-bottom: 65%;
-    height: 0px;
-  }
+	.auto-resize > div {
+		position: relative;
+		padding-bottom: 65%;
+		height: 0px;
+	}
 
-  .auto-resize iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-  }
+	.auto-resize iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 70%;
+	}
 
-  .board-image-container img {
-    width: 50%;
-  }
-
-  .staff-image-container img {
-    width: 40%;
-  }
+	.staff-image-container img {
+		width: 40%;
+	}
 }
 
 /* Laptop 1024 */
 @media screen and (min-width: 993px) and (max-width: 1279px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
+	body,
+	html {
+		overflow-x: hidden;
+	}
 
-  .jumbotron-fluid {
-    background-image: url('./img/jumbotron_chateau_dijon.jpeg');
-    height: 120px;
-    max-width: 100%;
-  }
+	.jumbotron-fluid {
+		background-image: url('./img/jumbotron_chateau_dijon.jpeg');
+		height: 120px;
+		max-width: 100%;
+	}
 
-  .writtenLogo {
-    margin-left: 2rem;
-  }
+	.writtenLogo {
+		margin-left: 2rem;
+	}
 
-  #flag {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    margin-left: 10rem;
-  }
+	#flag {
+		display: flex;
+		max-width: 100%;
+		height: auto;
+		margin-left: 10rem;
+	}
 
-  #poolSide,
-  #fronted,
-  #fountain {
-    margin: 6rem 0 0;
-  }
+	#poolSide,
+	#fronted,
+	#fountain {
+		margin: 6rem 0 0;
+	}
 
-  #fountain {
-    width: 80%;
-    margin-left: 2rem;
-  }
+	#fountain {
+		width: 80%;
+		margin-left: 2rem;
+	}
 
-  .blurb {
-    margin: 3rem 0 0 3.5rem;
-    font-weight: bolder;
-    font-size: 1.3rem;
-  }
+	.blurb {
+		margin: 3rem 0 0 3.5rem;
+		font-weight: bolder;
+		font-size: 1.3rem;
+	}
 
-  #hotel {
-    margin-left: 2.5rem;
-    margin-top: 5rem;
-  }
+	#hotel {
+		margin-left: 2.5rem;
+		margin-top: 5rem;
+	}
 
-  .row1,
-  .row3 {
-    margin-left: 3rem;
-  }
+	.row1,
+	.row3 {
+		margin-left: 3rem;
+	}
 
-  .row2,
-  .row3 {
-    margin-top: 6rem;
-  }
+	.row2,
+	.row3 {
+		margin-top: 6rem;
+	}
 
-  .members h4 {
-    margin: 0 0 1.3rem 4.7rem;
-  }
+	.year-in-review ul li {
+		margin-bottom: 1.3rem;
+	}
 
-  .year-in-review ul li {
-    margin-bottom: 1.3rem;
-  }
+	.auto-resize {
+		width: 900px;
+	}
 
-  .auto-resize {
-    width: 900px;
-  }
+	.auto-resize > div {
+		position: relative;
+		padding-bottom: 65%;
+		height: 0px;
+	}
 
-  .auto-resize > div {
-    position: relative;
-    padding-bottom: 65%;
-    height: 0px;
-  }
+	.auto-resize iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 70%;
+	}
 
-  .auto-resize iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-  }
-
-  .staff-image-container img {
-    width: 40%;
-  }
-
-  .board-image-container img {
-    width: 50%;
-  }
+	.staff-image-container img {
+		width: 40%;
+	}
 }
 
 /* Tablet 768 */
 @media screen and (min-width: 581px) and (max-width: 992px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
+	body,
+	html {
+		overflow-x: hidden;
+	}
 
-  .jumbotron-fluid {
-    background-image: url('./img/jumbotron_chateau_dijon.jpeg');
-    height: 120px;
-    max-width: 100%;
-  }
+	.jumbotron-fluid {
+		background-image: url('./img/jumbotron_chateau_dijon.jpeg');
+		height: 120px;
+		max-width: 100%;
+	}
 
-  .writtenLogo {
-    display: none;
-  }
+	.writtenLogo {
+		display: none;
+	}
 
-  .writtenLogoBelow {
-    display: inline-flex;
-    font-size: 2rem;
-    margin-left: 0.3rem;
-  }
+	.writtenLogoBelow {
+		display: inline-flex;
+		font-size: 2rem;
+		margin-left: 0.3rem;
+	}
 
-  #flag {
-    margin-left: 1.8rem;
-  }
+	#flag {
+		margin-left: 1.8rem;
+	}
 
-  .imgHouse {
-    display: flex;
-    justify-content: center;
-  }
+	.imgHouse {
+		display: flex;
+		justify-content: center;
+	}
 
-  #poolSide {
-    width: 70%;
-    margin: 0 0 2rem;
-  }
+	#poolSide {
+		width: 70%;
+		margin: 0 0 2rem;
+	}
 
-  #fountain {
-    width: 73%;
-    margin: 3rem 0 2rem 2.7rem;
-  }
+	#fountain {
+		width: 73%;
+		margin: 3rem 0 2rem 2.7rem;
+	}
 
-  #hotel,
-  #broadway {
-    margin-left: 4rem;
-  }
+	#hotel,
+	#broadway {
+		margin-left: 4rem;
+	}
 
-  #fronted {
-    width: 75%;
-    margin: 3rem 0 2rem 2.7rem;
-  }
+	#fronted {
+		width: 75%;
+		margin: 3rem 0 2rem 2.7rem;
+	}
 
-  .members h4 {
-    margin: 0 0 1.3rem 5rem;
-  }
+	.year-in-review ul li {
+		margin-bottom: 1.3rem;
+	}
 
-  .year-in-review ul li {
-    margin-bottom: 1.3rem;
-  }
+	.auto-resize {
+		width: 700px;
+	}
 
-  .auto-resize {
-    width: 700px;
-  }
+	.auto-resize > div {
+		position: relative;
+		padding-bottom: 65%;
+		height: 0px;
+	}
 
-  .auto-resize > div {
-    position: relative;
-    padding-bottom: 65%;
-    height: 0px;
-  }
-
-  .auto-resize iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-  }
+	.auto-resize iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 70%;
+	}
 }
 
 /* Mobile L 425 */
 @media screen and (min-width: 425px) and (max-width: 580px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
+	body,
+	html {
+		overflow-x: hidden;
+	}
 
-  .jumbotron-fluid {
-    background-image: url('./img/jumbotron_chateau_dijon.jpeg');
-    height: 120px;
-    max-width: 580px;
-  }
+	.jumbotron-fluid {
+		background-image: url('./img/jumbotron_chateau_dijon.jpeg');
+		height: 120px;
+		max-width: 580px;
+	}
 
-  .writtenLogo {
-    display: none;
-  }
+	.writtenLogo {
+		display: none;
+	}
 
-  .writtenLogoBelow {
-    display: inline-flex;
-    font-size: 1.8rem;
-    margin-left: 0.5rem;
-  }
+	.writtenLogoBelow {
+		display: inline-flex;
+		font-size: 1.8rem;
+		margin-left: 0.5rem;
+	}
 
-  #flag {
-    margin-left: 0;
-  }
+	#flag {
+		margin-left: 0;
+	}
 
-  nav ul li a {
-    font-size: 16px;
-  }
-  nav ul li ul {
-    top: -9px;
-  }
-  nav ul li ul li {
-    height: 40px;
-  }
-  nav ul li ul li a {
-    font-size: 16px;
-    height: 40px;
-  }
+	nav ul li a {
+		font-size: 16px;
+	}
+	nav ul li ul {
+		top: -9px;
+	}
+	nav ul li ul li {
+		height: 40px;
+	}
+	nav ul li ul li a {
+		font-size: 16px;
+		height: 40px;
+	}
 
-  header {
-    height: 70px;
-    width: 100%;
-  }
+	header {
+		height: 70px;
+		width: 100%;
+	}
 
-  .head {
-    top: 9px;
-    right: 20px;
-  }
+	.head {
+		top: 9px;
+		right: 20px;
+	}
 
-  #bonjour {
-    margin: 0;
-  }
+	#bonjour {
+		margin: 0;
+	}
 
-  .pageTitle {
-    margin: 0;
-  }
+	.pageTitle {
+		margin: 0;
+	}
 
-  #contactBlurb {
-    width: 90%;
-  }
+	#contactBlurb {
+		width: 90%;
+	}
 
-  .alamo {
-    text-align: center;
-    margin-left: 5rem;
-  }
+	.alamo {
+		text-align: center;
+		margin-left: 5rem;
+	}
 
-  #poolSide {
-    margin-left: 1.8rem;
-    width: 85%;
-  }
+	#poolSide {
+		margin-left: 1.8rem;
+		width: 85%;
+	}
 
-  #fountain {
-    margin-left: 1rem;
-    max-width: 90%;
-  }
+	#fountain {
+		margin-left: 1rem;
+		max-width: 90%;
+	}
 
-  #fronted {
-    margin-left: 1rem;
-    max-width: 90%;
-  }
+	#fronted {
+		margin-left: 1rem;
+		max-width: 90%;
+	}
 
-  .blurb {
-    margin-left: 1.5rem;
-    max-width: 90%;
-  }
+	.blurb {
+		margin-left: 1.5rem;
+		max-width: 90%;
+	}
 
-  #comprised {
-    margin-left: 1.5rem;
-    max-width: 90%;
-  }
+	#comprised {
+		margin-left: 1.5rem;
+		max-width: 90%;
+	}
 
-  #broadway {
-    margin-left: 1.5rem;
-    max-width: 90%;
-  }
+	#broadway {
+		margin-left: 1.5rem;
+		max-width: 90%;
+	}
 
-  .imgHouse {
-    margin: 2rem 0;
-  }
+	.imgHouse {
+		margin: 2rem 0;
+	}
 
-  .members h4 {
-    margin: 0 0 1.5rem 5rem;
-  }
+	.hoaList {
+		margin-top: 1.5rem;
+		margin-right: 2.5rem;
+	}
 
-  .hoaList {
-    margin-top: 1.5rem;
-    margin-right: 2.5rem;
-  }
+	.owners {
+		margin-left: 1.5rem;
+	}
 
-  .owners {
-    margin-left: 1.5rem;
-  }
+	.year-in-review ul li {
+		margin-bottom: 1.3rem;
+	}
 
-  .year-in-review ul li {
-    margin-bottom: 1.3rem;
-  }
+	.auto-resize {
+		width: 400px;
+	}
 
-  .auto-resize {
-    width: 400px;
-  }
+	.auto-resize > div {
+		position: relative;
+		padding-bottom: 65%;
+		height: 0px;
+	}
 
-  .auto-resize > div {
-    position: relative;
-    padding-bottom: 65%;
-    height: 0px;
-  }
+	.auto-resize iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 70%;
+	}
 
-  .auto-resize iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-  }
+	footer .col-6 {
+		padding-left: 3rem;
+	}
 
-  footer .col-6 {
-    padding-left: 3rem;
-  }
-
-  .powered-by {
-    padding: 0 1rem;
-  }
+	.powered-by {
+		padding: 0 1rem;
+	}
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
+	body,
+	html {
+		overflow-x: hidden;
+	}
 
-  .jumbotron-fluid {
-    background-image: url('./img/jumbotron_chateau_dijon.jpeg');
-    height: 120px;
-    max-width: 580px;
-  }
+	.jumbotron-fluid {
+		background-image: url('./img/jumbotron_chateau_dijon.jpeg');
+		height: 120px;
+		max-width: 580px;
+	}
 
-  .writtenLogo {
-    display: none;
-  }
+	.writtenLogo {
+		display: none;
+	}
 
-  .writtenLogoBelow {
-    display: inline-flex;
-    font-size: 1.8rem;
-    margin-left: 0.5rem;
-  }
+	.writtenLogoBelow {
+		display: inline-flex;
+		font-size: 1.8rem;
+		margin-left: 0.5rem;
+	}
 
-  #flag {
-    margin-left: 0;
-  }
+	#flag {
+		margin-left: 0;
+	}
 
-  nav ul li a {
-    font-size: 16px;
-  }
-  nav ul li ul {
-    top: -9px;
-  }
-  nav ul li ul li {
-    height: 40px;
-  }
-  nav ul li ul li a {
-    font-size: 16px;
-    height: 40px;
-  }
+	nav ul li a {
+		font-size: 16px;
+	}
+	nav ul li ul {
+		top: -9px;
+	}
+	nav ul li ul li {
+		height: 40px;
+	}
+	nav ul li ul li a {
+		font-size: 16px;
+		height: 40px;
+	}
 
-  header {
-    height: 70px;
-    width: 100%;
-  }
+	header {
+		height: 70px;
+		width: 100%;
+	}
 
-  .head {
-    top: 9px;
-    right: 20px;
-  }
+	.head {
+		top: 9px;
+		right: 20px;
+	}
 
-  #bonjour {
-    margin: 0;
-  }
+	#bonjour {
+		margin: 0;
+	}
 
-  .pageTitle {
-    margin: 0;
-  }
+	.pageTitle {
+		margin: 0;
+	}
 
-  #contactBlurb {
-    width: 100%;
-  }
+	#contactBlurb {
+		width: 100%;
+	}
 
-  .alamo {
-    text-align: center;
-    margin-left: 5rem;
-  }
+	.alamo {
+		text-align: center;
+		margin-left: 5rem;
+	}
 
-  #poolSide {
-    margin-left: 1.8rem;
-    width: 85%;
-  }
+	#poolSide {
+		margin-left: 1.8rem;
+		width: 85%;
+	}
 
-  #fountain {
-    margin-left: 1rem;
-    max-width: 90%;
-  }
+	#fountain {
+		margin-left: 1rem;
+		max-width: 90%;
+	}
 
-  #fronted {
-    margin-left: 1rem;
-    max-width: 90%;
-  }
+	#fronted {
+		margin-left: 1rem;
+		max-width: 90%;
+	}
 
-  .blurb {
-    margin-left: 1.5rem;
-    max-width: 90%;
-  }
+	.blurb {
+		margin-left: 1.5rem;
+		max-width: 90%;
+	}
 
-  #comprised {
-    margin-left: 1.5rem;
-    max-width: 90%;
-  }
+	#comprised {
+		margin-left: 1.5rem;
+		max-width: 90%;
+	}
 
-  #broadway {
-    margin-left: 1.5rem;
-    max-width: 90%;
-  }
+	#broadway {
+		margin-left: 1.5rem;
+		max-width: 90%;
+	}
 
-  .imgHouse {
-    margin: 2rem 0;
-  }
+	.imgHouse {
+		margin: 2rem 0;
+	}
 
-  .members h4 {
-    margin: 0 0 1.5rem 5rem;
-  }
+	.year-in-review ul li {
+		margin: 0 0 1.3rem 1.8rem;
+	}
 
-  .year-in-review ul li {
-    margin: 0 0 1.3rem 1.8rem;
-  }
+	.auto-resize {
+		width: 340px;
+	}
 
-  .auto-resize {
-    width: 340px;
-  }
+	.auto-resize > div {
+		position: relative;
+		padding-bottom: 65%;
+		height: 0px;
+	}
 
-  .auto-resize > div {
-    position: relative;
-    padding-bottom: 65%;
-    height: 0px;
-  }
-
-  .auto-resize iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-  }
+	.auto-resize iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 70%;
+	}
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
+	body,
+	html {
+		overflow-x: hidden;
+	}
 
-  .jumbotron-fluid {
-    background-image: url('./img/jumbotron_chateau_dijon.jpeg');
-    height: 120px;
-    max-width: 580px;
-  }
+	.jumbotron-fluid {
+		background-image: url('./img/jumbotron_chateau_dijon.jpeg');
+		height: 120px;
+		max-width: 580px;
+	}
 
-  .writtenLogo {
-    display: none;
-  }
+	.writtenLogo {
+		display: none;
+	}
 
-  .writtenLogoBelow {
-    display: inline-flex;
-    font-size: 1.5rem;
-    margin-left: 0.5rem;
-  }
+	.writtenLogoBelow {
+		display: inline-flex;
+		font-size: 1.5rem;
+		margin-left: 0.5rem;
+	}
 
-  #flag {
-    margin-left: 0;
-  }
+	#flag {
+		margin-left: 0;
+	}
 
-  nav ul li a {
-    font-size: 16px;
-  }
-  nav ul li ul {
-    top: -9px;
-  }
-  nav ul li ul li {
-    height: 40px;
-  }
-  nav ul li ul li a {
-    font-size: 16px;
-    height: 40px;
-  }
+	nav ul li a {
+		font-size: 16px;
+	}
+	nav ul li ul {
+		top: -9px;
+	}
+	nav ul li ul li {
+		height: 40px;
+	}
+	nav ul li ul li a {
+		font-size: 16px;
+		height: 40px;
+	}
 
-  header {
-    height: 70px;
-    width: 100%;
-  }
+	header {
+		height: 70px;
+		width: 100%;
+	}
 
-  .head {
-    top: 9px;
-    right: 20px;
-  }
+	.head {
+		top: 9px;
+		right: 20px;
+	}
 
-  #bonjour {
-    margin: 0;
-  }
+	#bonjour {
+		margin: 0;
+	}
 
-  .pageTitle {
-    margin: 0;
-  }
+	.pageTitle {
+		margin: 0;
+	}
 
-  #contactBlurb {
-    width: 90%;
-  }
+	#contactBlurb {
+		width: 90%;
+	}
 
-  .alamo {
-    text-align: center;
-    margin-left: 5rem;
-  }
+	.alamo {
+		text-align: center;
+		margin-left: 5rem;
+	}
 
-  #poolSide {
-    margin-left: 1.8rem;
-    width: 85%;
-  }
+	#poolSide {
+		margin-left: 1.8rem;
+		width: 85%;
+	}
 
-  #fountain {
-    margin-left: 1rem;
-    max-width: 90%;
-  }
+	#fountain {
+		margin-left: 1rem;
+		max-width: 90%;
+	}
 
-  #fronted {
-    margin-left: 1rem;
-    max-width: 90%;
-  }
+	#fronted {
+		margin-left: 1rem;
+		max-width: 90%;
+	}
 
-  .blurb {
-    margin-left: 1.5rem;
-    max-width: 90%;
-  }
+	.blurb {
+		margin-left: 1.5rem;
+		max-width: 90%;
+	}
 
-  #comprised {
-    margin-left: 1.5rem;
-    max-width: 90%;
-  }
+	#comprised {
+		margin-left: 1.5rem;
+		max-width: 90%;
+	}
 
-  #broadway {
-    margin-left: 1.5rem;
-    max-width: 90%;
-  }
+	#broadway {
+		margin-left: 1.5rem;
+		max-width: 90%;
+	}
 
-  .imgHouse {
-    margin: 2rem 0;
-  }
+	.imgHouse {
+		margin: 2rem 0;
+	}
 
-  .members h4 {
-    margin: 0 0 1.5rem 2.2rem;
-  }
+	.year-in-review ul li {
+		margin: 0 0 1.3rem 0rem;
+	}
 
-  .year-in-review ul li {
-    margin: 0 0 1.3rem 0rem;
-  }
+	.videoTitle {
+		font-size: 34px;
+	}
 
-  .videoTitle {
-    font-size: 34px;
-  }
+	.auto-resize {
+		max-width: 200px;
+	}
 
-  .auto-resize {
-    max-width: 200px;
-  }
+	.auto-resize > div {
+		position: relative;
+		padding-bottom: 50%;
+		height: 0px;
+	}
 
-  .auto-resize > div {
-    position: relative;
-    padding-bottom: 50%;
-    height: 0px;
-  }
-
-  .auto-resize iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-  }
+	.auto-resize iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 70%;
+	}
 }
 
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  nav {
-    top: 5%;
-  }
+	nav {
+		top: 5%;
+	}
 
-  nav a {
-    font-size: 23px;
-  }
+	nav a {
+		font-size: 23px;
+	}
 
-  #chateau-dijon-popup {
-    max-width: 100%;
-  }
+	#chateau-dijon-popup {
+		max-width: 100%;
+	}
 }
