@@ -36,6 +36,10 @@
 
 #emailBoard {
 	text-align: center;
+}
+
+#emailBoard a {
+  color: #0b253e;
   text-decoration: underline;
 }
 
@@ -49,7 +53,8 @@
 	.member {
 		height: 500px;
 		width: 100%;
-		margin-bottom: 5rem;
+		margin-bottom: 2rem;
+    margin-top: 3rem;
 		text-align: center;
 	}
 
@@ -68,6 +73,10 @@
 		margin-bottom: 1rem;
 		text-align: center;
 	}
+
+  #emailBoard {
+    margin-bottom: 3rem;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
@@ -213,7 +222,6 @@
 	}
 
   #emailBoard a {
-    color: inherit;
     font-size: 2rem;
   }
 }
