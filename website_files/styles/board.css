@@ -1,39 +1,29 @@
 .board-image-container img {
-	width: 33%;
-	position: relative;
-	margin-bottom: 50px;
-}
-
-.container {
-}
-
-.members {
-	margin-top: 1rem;
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
+	/* width: 33%; */
+	/* position: relative; */
+	/* margin-bottom: 50px; */
 }
 
 .member {
 	height: 500px;
 	width: 100%;
-  margin-bottom: 5rem;
+	margin-bottom: 5rem;
 }
 
 .member img {
 	height: 95%;
 	object-fit: cover;
-  object-position: 50% 20%;
+	object-position: 50% 20%;
 }
 
-.members h4 {
+.member h4 {
 	font-size: 2rem;
-	margin: 0 0 1.3rem 5rem;
+	/* margin: 0 0 1.3rem 5rem; */
 }
 
 .board-name-bg {
-	max-width: 70%;
-	margin: 0 auto;
+	width: 100%;
+  text-align: center;
 }
 
 .board-name-bg h4 {
@@ -51,48 +41,173 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
-	.members h4 {
-		margin: 0 0 1.5rem 2.2rem;
+	.board-image-container {
+		width: 100%;
+		position: relative;
+		padding-bottom: 20px;
+	}
+
+	.member {
+		height: 500px;
+		width: 100%;
+		margin-bottom: 5rem;
+		text-align: center;
+	}
+
+	.member img {
+		height: 100%;
+		object-fit: cover;
+		object-position: 50% 20%;
+	}
+
+	.board-name-bg h4 {
+		margin: 0 0 0.1rem 0rem;
+		font-size: 1.5rem;
+	}
+
+	.member p {
+		margin-bottom: 1rem;
+		text-align: center;
 	}
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
-	.members h4 {
-		margin: 0 0 1.5rem 5rem;
+	.board-image-container {
+		width: 100%;
+		position: relative;
+		padding-bottom: 20px;
+	}
+
+	.member {
+		height: 500px;
+		width: 100%;
+		margin-bottom: 5rem;
+		text-align: center;
+	}
+
+	.member img {
+		height: 100%;
+		object-fit: cover;
+		object-position: 50% 20%;
+	}
+
+	.board-name-bg h4 {
+		margin: 0 0 0rem 0rem;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	.member p {
+		margin-bottom: 1rem;
+		text-align: center;
 	}
 }
 
 @media screen and (min-width: 425px) and (max-width: 580px) {
-	.members h4 {
-		margin: 0 0 1.5rem 5rem;
+	.board-name-bg h4 {
+		margin: 0;
 	}
 }
 
 @media screen and (min-width: 581px) and (max-width: 992px) {
-	.members h4 {
-		margin: 0 0 1.3rem 5rem;
+  .board-image-container {
+		width: 100%;
+		position: relative;
+		padding-bottom: 20px;
+	}
+
+	.member {
+		height: 500px;
+		width: 70%;
+		margin-bottom: 10rem;
+		text-align: center;
+	}
+
+	.member img {
+		height: 100%;
+		object-fit: cover;
+		object-position: 50% 20%;
+	}
+
+	.board-name-bg h4 {
+		margin: 0 0 0rem 0rem;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	.member p {
+		margin-bottom: 1rem;
+		text-align: center;
 	}
 }
 
 @media screen and (min-width: 993px) and (max-width: 1279px) {
-	.members h4 {
-		margin: 0 0 1.3rem 4.7rem;
+  .board-image-container {
+		width: 100%;
+		position: relative;
+		padding-bottom: 20px;
 	}
 
-	.board-image-container img {
-		width: 50%;
+	.member {
+		height: 500px;
+		width: 70%;
+		margin-bottom: 9rem;
+		text-align: center;
 	}
 
-	.members h4 {
-		margin: 0 0 1.3rem 4.7rem;
+	.member img {
+		height: 100%;
+		object-fit: cover;
+		object-position: 50% 20%;
+	}
+
+	.board-name-bg h4 {
+		margin: 0;
+	}
+
+	.member p {
+		margin-bottom: 1rem;
+		text-align: center;
 	}
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1440px) {
-	.board-image-container img {
-		width: 50%;
-		margin: 0 auto;
-	}
+	.member {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 9rem;
+  }
+  
+  .member img {
+    height: 95%;
+    object-fit: cover;
+    object-position: 50% 20%;
+  }
+  
+  .member h4 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .board-name-bg {
+    width: 100%;
+    /* margin: 0 auto; */
+    text-align: center;
+  }
+  
+  .board-name-bg h4 {
+    color: #000;
+  }
+  
+  .board-name-bg p {
+    color: #b08d57;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
