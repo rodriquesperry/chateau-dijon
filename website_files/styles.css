@@ -283,8 +283,8 @@ hr {
 .mainBody {
 	margin: 0 20px;
 	z-index: 0;
-  overflow: hidden;
-  padding-bottom: 30px;
+	overflow: hidden;
+	padding-bottom: 30px;
 }
 
 #flag {
@@ -390,6 +390,21 @@ h4 {
 	margin-bottom: 1.3rem;
 }
 
+.pdf-container {
+	width: 100%;
+	max-width: 900px; /* keep it tidy on desktop if you want */
+	height: 100svh; /* better than 100vh on mobile; respects dynamic UI */
+	margin: 0 auto 2rem;
+	overflow: hidden; /* the iframe manages its own scroll */
+}
+
+.YIR2024-iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+}
+
 .workOrderBlurb {
 	font-size: 1.5rem;
 }
@@ -435,8 +450,8 @@ h4 {
 
 footer {
 	padding-bottom: 0.3rem;
-  position: relative;
-  z-index: 10;
+	position: relative;
+	z-index: 10;
 }
 
 footer p {
@@ -486,6 +501,19 @@ footer h2 {
 		margin-left: 10rem;
 	}
 
+	.pdf-container {
+		height: 100%;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	.YIR2024-iframe {
+		width: 100%;
+		border: 4px solid green;
+	}
+
 	.staff-image-container img {
 		width: 33%;
 	}
@@ -494,14 +522,14 @@ footer h2 {
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
 	#flag {
 		display: flex;
-		max-width: 100%;
+		max-width: 50%;
 		height: auto;
-		margin: 0 0 3.5rem 28.2rem;
+		margin: 0 auto;
 	}
 
 	.flag-blurb {
 		margin-left: 10rem;
-		margin-bottom: 5rem;
+		margin: 3rem auto;
 		width: 80%;
 	}
 
@@ -543,6 +571,19 @@ footer h2 {
 
 	.year-in-review {
 		margin-right: 3rem;
+	}
+
+	.pdf-container {
+		height: 100%;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	.YIR2024-iframe {
+		width: 100%;
+		border: 4px solid green;
 	}
 
 	.staff-image-container img {
@@ -614,6 +655,19 @@ footer h2 {
 		left: 0;
 		width: 100%;
 		height: 70%;
+	}
+
+	.pdf-container {
+		height: 100%;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	.YIR2024-iframe {
+		width: 100%;
+		border: 4px solid green;
 	}
 
 	.staff-image-container img {
@@ -699,6 +753,19 @@ footer h2 {
 		height: 70%;
 	}
 
+	.pdf-container {
+		height: 100%;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	.YIR2024-iframe {
+		width: 100%;
+		border: 4px solid green;
+	}
+
 	.staff-image-container img {
 		width: 40%;
 	}
@@ -776,6 +843,18 @@ footer h2 {
 		left: 0;
 		width: 100%;
 		height: 70%;
+	}
+
+	.pdf-container {
+		height: 70%;
+		width: 90%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.YIR2024-iframe {
+		width: 100%;
+		border: 4px solid green;
 	}
 }
 
@@ -902,6 +981,20 @@ footer h2 {
 		position: relative;
 		padding-bottom: 65%;
 		height: 0px;
+	}
+
+	.pdf-container {
+		height: 100%;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 4rem;
+	}
+
+	.YIR2024-iframe {
+		width: 100%;
+		height: 100%;
+		border: 4px solid green;
 	}
 
 	.auto-resize iframe {
@@ -1036,6 +1129,20 @@ footer h2 {
 		height: 0px;
 	}
 
+	.pdf-container {
+		height: 100%;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 4rem;
+	}
+
+	.YIR2024-iframe {
+		width: 100%;
+		height: 100%;
+		border: 4px solid green;
+	}
+
 	.auto-resize iframe {
 		position: absolute;
 		top: 0;
@@ -1162,6 +1269,20 @@ footer h2 {
 		position: relative;
 		padding-bottom: 50%;
 		height: 0px;
+	}
+
+	.pdf-container {
+		height: 100%;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 4rem;
+	}
+
+	.YIR2024-iframe {
+		width: 100%;
+		height: 100%;
+		border: 4px solid green;
 	}
 
 	.auto-resize iframe {
