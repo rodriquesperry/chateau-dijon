@@ -418,6 +418,21 @@ h4 {
 	text-decoration: underline;
 }
 
+.big {
+  font-size: 21px;
+}
+
+.work-order-font {
+  font-size: 20.5px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.work-order-font ul li {
+  list-style: none;
+  text-align: center;
+}
+
 /* Location Page */
 
 .locationBody {
