@@ -293,6 +293,10 @@ hr {
 	height: auto;
 }
 
+.flag-blurb {
+	line-height: 1.5;
+}
+
 .about {
 	font-family: 'Cormorant SC', serif;
 	/* font-family: 'EB Garamond', serif;  */
@@ -419,18 +423,18 @@ h4 {
 }
 
 .big {
-  font-size: 21px;
+	font-size: 21px;
 }
 
 .work-order-font {
-  font-size: 20.5px;
-  font-weight: 100;
-  font-style: italic;
+	font-size: 20.5px;
+	font-weight: 100;
+	font-style: italic;
 }
 
 .work-order-font ul li {
-  list-style: none;
-  text-align: center;
+	list-style: none;
+	text-align: center;
 }
 
 /* Location Page */
@@ -489,7 +493,7 @@ footer h2 {
 
 /* @media's */
 
-@media screen and (min-width: 1921px) and (max-width: 2560px) {
+/* @media screen and (min-width: 1921px) and (max-width: 2560px) {
 	.locationBody {
 		margin-left: 22rem;
 	}
@@ -532,9 +536,9 @@ footer h2 {
 	.staff-image-container img {
 		width: 33%;
 	}
-}
+} */
 
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
 	#flag {
 		display: flex;
 		max-width: 50%;
@@ -545,7 +549,8 @@ footer h2 {
 	.flag-blurb {
 		margin-left: 10rem;
 		margin: 3rem auto;
-		width: 80%;
+		width: 60%;
+		max-width: 640px;
 	}
 
 	.locationBody {
@@ -606,7 +611,7 @@ footer h2 {
 	}
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
 	body,
 	html {
 		overflow-x: hidden;
@@ -714,6 +719,12 @@ footer h2 {
 		margin-left: 10rem;
 	}
 
+	.flag-blurb {
+		width: 80%;
+		max-width: 620px;
+		margin: 3rem auto;
+	}
+
 	#poolSide,
 	#fronted,
 	#fountain {
@@ -812,6 +823,12 @@ footer h2 {
 	#flag {
 		margin-left: 1.8rem;
 	}
+
+  .flag-blurb {
+    width: 80%;
+    max-width: 620px;
+    margin: 3rem auto;
+  }
 
 	.imgHouse {
 		display: flex;
